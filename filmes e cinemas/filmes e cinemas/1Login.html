@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CineOscar</title>
+        <link rel="Stylesheet" type="text/css" href="CSS/Estilos.css">
+        <link rel="Stylesheet" type="text/css" href="CSS/Normalize.css">
+        <link rel="Stylesheet" href="Bootstrap Local/css/bootstrap.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Slab:400,700|Pacifico' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <center>
+            <br>
+            <section id="operation_sec">
+				<h2 style="color: #ffffff;">Formulário de Login</h2>
+				<br>
+				<form action="log.php" method="post">
+					<table padding="10px"  style="color:white;">
+						<tr>
+							<td align="center" height="40" width="400">
+								Digite seu usuário
+								&nbsp;
+								<input type="text" name="usuario" id="usuario_txt" placeholder="Nome de usuário" class="form-group" required>
+							</td>
+						</tr>
+						<tr>
+							<td align="center" height="20" width="400">
+								&nbsp;
+							</td>
+						</tr>
+						<tr>
+							<td align="center" height="40" width="400">
+								Digite sua senha
+								&nbsp;
+								<input type="password" name="senha" id="senha_txt" placeholder="Senha" class="form-group" required>
+							</td>
+						</tr>
+						<tr>
+							<td align="center" height="20" width="400">
+								&nbsp;
+							</td>
+						</tr>
+						<tr>
+							<td height="40" align="center" colspan="2">
+								<input type="submit" name="login" id="login_btn" value="Enviar" class="botao">
+							</td>
+						</tr>
+					</table>
+				</form>
+				<br><a href="Javascript:carregar_pag('3Forgot_psw.html')">Esqueceu sua senha? Clique aqui</a>
+				<br><a href="Javascript:carregar_pag('2Cadastro.html')">Ir para a página de Cadastro</a>
+			</section>
+        </center>
+        <br>
+    </body>
+</html>

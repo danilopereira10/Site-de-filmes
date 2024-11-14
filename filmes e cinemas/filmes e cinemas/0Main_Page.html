@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CineOscar</title>
+        <link rel="Stylesheet" type="text/css" href="CSS/Estilos.css">
+        <link rel="Stylesheet" type="text/css" href="CSS/Normalize.css">
+        <link rel="Stylesheet" href="Bootstrap Local/css/bootstrap.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Slab:400,700|Pacifico' rel='stylesheet' type='text/css'>
+		<script src="https://code.jquery.com/jquery-1.10.2.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			function carregar_pag(pag)
+			{
+				$("#resto").load(pag);
+			}
+		</script>
+    </head>
+    <body style="background-color: black;" onload="">
+        <!--<input type="text" class="form-group">-->
+        <center>
+            <br>
+            <!-- NAVEGAÇÃO -->
+            <section id="navig">
+                <a href="Javascript:carregar_pag('Main.html')">CineOscar</a>
+                <ul>
+                    <li><a href="#sobre">SOBRE</a></li>
+                    <li><a href="Javascript:carregar_pag('1Login.html')">LOGIN</a></li>
+                    <li><a href="Javascript:carregar_pag('2Cadastro.html')">CADASTRO</a></li>
+                    <li><a href="Javascript:carregar_pag('Pagina5_Noticias_not1.html')">NOTÍCIAS</a></li>
+                    <li><a href="Javascript:carregar_pag('4Creditos.html')">CRÉDITOS</a></li>
+                    <li><a href="Javascript:carregar_pag('Pagina6_Curiosidades.html')">CURIOSIDADES</a></li>
+                    <li><a href="Javascript:carregar_pag('5Moderadores.html')">MODERADORES</a></li>
+                </ul>
+            </section>
+			<br>
+			<!-- CABEÇALHO -->
+            <header>
+                <h1>CineOscar</h1>
+                <p>O Universo Cinematográfico na palma de sua mão!!</p>
+                <br>
+                <a href="#sobre"><input type="button" class="botao" value="VER MAIS" id="vermais_btn"></a>
+            </header>
+            <br><br>
+            <section id="corpo">
+                <section id="menu">
+                    <!-- MENU LATERAL -->
+                    <!--
+                        Menu Rápido
+                        Atores
+                        Curiosidades
+                        Diretores
+                        Dublês
+                        História do cinema
+                        Lançamentos
+                        Notícias
+                        Oscar
+                        Roteiristas
+                    -->
+                    <div id="menulat">
+                        <table border=0 id="tabela_menulat">
+                            <tr>
+                                <td>
+                                    <center><h2>Menu Rápido</h2></center>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="button" id="atores_btn" name="botao_atores" class="menulat_btn" value="Atores" onclick="carregar_pag('Pagina7_Atores.html')">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="button" id="curiosidades_btn" name="botao_curiosidades" class="menulat_btn" value="Curiosidades" onclick="carregar_pag('Pagina6_Curiosidades.html')">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="button" id="diretores_btn" name="botao_diretores" class="menulat_btn" value="Diretores" onclick="carregar_pag('Pagina8_Diretores.html')">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="button" id="dubles_btn" name="botao_dubles" class="menulat_btn" value="Dublês" onclick="carregar_pag('Pagina9_Dubles.html')">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="button" id="historia_btn" name="botao_historia" class="menulat_btn" value="História" onclick="carregar_pag('Pagina4_Historia.html')">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<input type="button" id="lancamentos_btn" name="botao_lancamentos" class="menulat_btn" value="Lançamentos" onclick="carregar_pag('Pagina2_Lancamentos.html')">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="button" id="noticias_btn" name="botao_noticias" class="menulat_btn" value="Notícias" onclick="carregar_pag('Pagina5_Noticias.html')">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="button" id="oscar_btn" name="botao_oscar" class="menulat_btn" value="Oscar" onclick="carregar_pag('Pagina1_Oscar.html')">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="button" id="roteiristas_btn" name="botao_roteiristas" class="menulat_btn" value="Roteiristas" onclick="carregar_pag('Pagina10_Roteiristas.html')">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="height: 4px;">
+                                    &nbsp;
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <br>
+                    <div id="info">
+                        <!-- SOBRE -->
+                        <section id="sobre">
+                            <h2 style="color: #ffffff;">SOBRE O SITE</h2>
+                            <p>Alguma informação sobre o site</p>
+                        </section>
+                        <br>
+                        <!-- CONTATO -->
+                        <section id="contato">
+                            <h2 style="color: #ffffff;">CONTATO</h2>
+                            <p>Entre em contato conosco.</p>
+                            <div>
+                                <img src="CSS/Imagens/Fone.png" alt="telefone">
+                                <p><a href="tel:xx55555555">(xx)5555-5555</a></p>
+                            </div>
+                            <div>
+                                <img src="CSS/Imagens/Contato.png" alt="email">
+                                <p><a href="exemplo:email@contato.com">email@contato.com</a></p>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+                <section id="resto" style="padding: 0 30px;">
+                    <br>
+                    <!-- EM ALTA = OSCAR, LANÇAMENTOS, TRAILERS E FÓRUNS-->
+                    <section id="em_alta">
+                        <h2>EM ALTA</h2>
+                        <div id="oscar">
+                            <a href="Javascript:carregar_pag('Pagina1_Oscar.html')">
+                                <img src="CSS/Imagens/emalta_oscar.jpg" style="max-width: 180px; max-height: 150px;">
+                                <h3>Oscar e mais</h3>
+                                <p>Conheça os melhores dos melhores do cinema.</p>
+                            </a>
+                        </div>
+                        <div id="lancamentos">
+                            <a href="Javascript:carregar_pag('Pagina2_Lancamentos.html')">
+                                <img src="CSS/Imagens/emalta_lancamentos.jpg" style="max-width: 180px; max-height: 150px;">
+                                <h3>Lançamentos</h3>
+                                <p>Fique por dentro de todos os filmes que estrearão nos cinemas no ano de 2018.</p>
+                            </a>
+                        </div>
+                    </section>
+                    <br>
+                    <!-- CONTEÚDO -->
+                    <!--
+                        HISTÓRIA DO CINEMA      OK
+                        CURIOSIDADES            OK
+                        NOTÍCIAS                OK
+                    -->
+                    <section id="conteudo">
+                        <h2>SAIBA MAIS SOBRE O CINEMA</h2>
+                        <div>
+                            <a href="Javascript:carregar_pag('Pagina4_Historia.html')">
+                                <img src="CSS/Imagens/saibamais_hist.jpg" style="max-width: 180px; max-height: 150px;">
+                                <h3>História do cinema</h3>
+                                <p>Saiba como ocorreu os processos de criação e de advento do cinema pelo mundo</p>
+                            </a>
+                        </div>
+                        <div id="noticias">
+                            <a href="Javascript:carregar_pag('Pagina5_Noticias.html')">
+                                <img src="CSS/Imagens/saibamais_noticias.jpg" style="max-width: 210px; max-height: 160px;">
+                                <h3>Notícias</h3>
+                                <p>Fique por dentro de notícias acerca do mundo cinematográfico</p>
+                            </a>
+                        </div>
+                        <div id="curiosidades">
+                            <a href="Javascript:carregar_pag('Pagina6_Curiosidades.html')">
+                                <img src="CSS/Imagens/saibamais_curiosidades.jpg" style="max-width: 180px; max-height: 150px;">
+                                <h3>Curiosidades</h3>
+                                <p>Conheça algumas das curiosidades mais interessantes relacionadas ao cinema</p>
+                            </a>
+                        </div>
+                    </section>
+                    <br>
+                    <!-- ESTRELAS -->
+                    <!--
+                        ATORES
+                        DIRETORES
+                        DUBLÊS
+                        ROTEIRISTAS
+                    -->
+                    <section id="pessoas">
+                        <h2>ESTRELAS DO CINEMA</h2>
+                        <div id="atores">
+                            <a href="Javascript:carregar_pag('Pagina7_Atores.html')">
+                                <img src="CSS/Imagens/estrelas_atores.jpg" style="max-width: 180px; max-height: 150px;">
+                                <h3>Atores</h3>
+                                <p>Conheça os 25 atores mais destacados de Hollywood de todos os tempos</p>
+                            </a>
+                        </div>
+                        <div id="diretores">
+                            <a href="Javascript:carregar_pag('Pagina8_Diretores.html')">
+                                <img src="CSS/Imagens/estrelas_diretores.jpg" style="max-width: 180px; max-height: 150px;">
+                                <h3>Diretores</h3>
+                                <p>Descubra quem são os 15 melhores diretores do cinema e suas melhores obras</p>
+                            </a>
+                        </div>
+                        <div id="dubles">
+                            <a href="Javascript:carregar_pag('Pagina9_Dubles.html')">
+                                <img src="CSS/Imagens/estrelas_dubles.jpg" style="max-width: 180px; max-height: 150px;">
+                                <h3>Dublês</h3>
+                                <p>Veja o que você ou qualquer pessoa precisa para se tornar um dublê</p>
+                            </a>
+                        </div>
+                        <div id="roteiristas">
+                            <a href="Javascript:carregar_pag('Pagina10_Roteiristas.html')">
+                                <img src="CSS/Imagens/estrelas_roteiristas.jpg" style="max-width: 180px; max-height: 150px;">
+                                <h3>Roteiristas</h3>
+                                <p>Os Melhores Roteiristas do Cinema</p>
+                            </a>
+                        </div>
+                    </section>
+                </section>
+            </section>
+            <br>
+            <br>
+            <!-- CRÉDITOS -->
+            <footer id="creditos">
+                <p>Desenvolvido por: Danilo Pereira, Fernando Fernandes, João Henrique, Luiz Eduardo e Vitor Alves.</p>
+            </footer>
+        </center>
+        <br>
+    </body>
+</html>

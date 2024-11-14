@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CineOscar</title>
+        <link rel="Stylesheet" type="text/css" href="CSS/Estilos.css">
+        <link rel="Stylesheet" type="text/css" href="CSS/Normalize.css">
+        <link rel="Stylesheet" href="Bootstrap Local/css/bootstrap.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Slab:400,700|Pacifico' rel='stylesheet' type='text/css'>
+		<script type="text/javascript">
+			function verificar()
+			{
+				var psw = document.getElementById("senha_psw").value;
+				var psw_conf = document.getElementById("conf_psw").value;
+				if(psw != psw_conf)
+				{
+					alert("A senha está incorreta!"+psw+" "+psw_conf);
+					document.getElementById("login_btn").disabled=true;
+				}
+				else
+				{
+					document.getElementById("login_btn").disabled=false;
+				}
+			}
+		</script>
+    </head>
+    <body>
+        <center>
+            <br>
+            <section id="operation_sec">
+				<h2  style="color: #ffffff;">Formulário para Cadastro</h2>
+				<br>
+				<form action="cad.php" method="post">
+				<div id="Tabelas">
+					<table padding="10px"  style="color:white;">
+						<tr>
+							<td align="center" height="40" width="400">
+								Digite um nome
+								<br>
+								<input type="text" name="nome" id="nome_txt" placeholder="Nome" class="form-group" required>
+							</td>
+						</tr>
+						<tr>
+							<td align="center" height="40" width="400">
+								Digite um sobrenome
+								<br>
+								<input type="text" name="sobrenome" id="sobrenome_txt" placeholder="Sobrenome" class="form-group" required>
+							</td>
+						</tr>
+						<tr>
+							<td align="center" height="40" width="400">
+								Data de nascimento
+								<br>
+								<input type="date" name="data" id="data_date" placeholder="01/01/2000" class="form-group" required>
+							</td>
+						</tr>
+						<tr>
+							<td align="center" height="40" width="400">
+								Escolha seu sexo
+								<br>
+								<input type="radio" name="sexo" id="sexo_rdb" value="m" checked>Masc.
+								<input type="radio" name="sexo" id="sexo_rdb" value="f">Fem.
+							</td>
+						</tr>
+					</table>
+					<table padding="10px"  style="color:white;">
+						<tr>
+							<td align="center" height="40" width="400">
+								Digite um usuário
+								<br>
+								<input type="text" name="usuario" id="usuario_txt" placeholder="Usuário" class="form-group" required>
+							</td>
+						</tr>
+						<tr>
+							<td align="center" height="40" width="400">
+								Digite seu email
+								<br>
+								<input type="email" name="email" id="email_email" placeholder="Example@email.com" class="form-group" required>
+							</td>
+						</tr>
+						<tr>
+							<td align="center" height="40" width="400">
+								Insira sua senha
+								<br>
+								<input type="password" name="senha" id="senha_psw" placeholder="Senha" class="form-group" required>
+							</td>
+						</tr>
+						<tr>
+							<td align="center" height="40" width="400">
+								Confirme sua senha
+								<br>
+								<input type="password" name="conf" id="conf_psw" placeholder="Confirmar senha" class="form-group" onblur="verificar()" required>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<br>
+				<input type="submit" name="login" id="login_btn" value="Enviar" class="botao">
+				<br>
+				<a href="Javascript:carregar_pag('1Login.html')">Ir para a página de Login</a>
+				</form>
+			</section>
+        </center>
+        <br>
+    </body>
+</html>
